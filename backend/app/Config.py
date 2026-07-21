@@ -1,19 +1,24 @@
 import os
 
+# Project Root
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Audio Settings
 SAMPLE_RATE = 16000
-SUPPORTED_FORMATS = [".wav", ".mp3", ".flac", ".ogg"]
+SUPPORTED_AUDIO_FORMATS = [
+    ".wav",
+    ".mp3",
+    ".flac",
+    ".ogg"
+]
 
 # Model Settings
-MODEL_PATH = os.path.join("models", "deepfake_audio_model.pth")
-DEVICE = "cpu"  # Change to "cuda" if GPU is available
+MODEL_NAME = "Deepfake Audio Detector"
+MODEL_PATH = os.path.join(BASE_DIR, "..", "models", "deepfake_model.pth")
 
-# Prediction Settings
-CONFIDENCE_THRESHOLD = 0.50
+# Prediction
+PREDICTION_THRESHOLD = 0.5
 
-# Upload Settings
-UPLOAD_FOLDER = "uploads"
-MAX_FILE_SIZE = 20 * 1024 * 1024  # 20 MB
-
-# Logging
-LOG_FILE = "logs/app.log"
+# Upload Directory
+UPLOAD_FOLDER = os.path.join(BASE_DIR, "..", "uploads")
+os.makedirs(UPLOAD_FOLDER, exist_ok=True)
