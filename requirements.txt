@@ -1,4 +1,10 @@
+fastapi
+uvicorn
+torch
+torchaudio
+numpy
 librosa
 soundfile
-numpy
-matplotlib
+scikit-learn
+python-multipart
+pydantic
