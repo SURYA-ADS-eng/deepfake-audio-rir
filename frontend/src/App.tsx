@@ -4,7 +4,7 @@ import WaveformPlayer from "./components/WaveformPlayer";
 import ResultsPanel from "./components/ResultsPanel";
 import "./styles.css";
 
-export type AnalysisResult = {
+export type AnalysisResult ={
   fake_confidence: number;
   rir_score: number;
   breathing_peaks: number;
