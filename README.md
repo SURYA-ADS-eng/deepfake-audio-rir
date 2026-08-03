@@ -61,16 +61,36 @@ Implemented Librosa-based feature extraction pipeline including:
 
 ---
 
-## 📝 Today's Work
+Week 1 – Completed Work
+Initialized the GitHub repository and project structure.
+Set up the FastAPI backend.
+Implemented audio upload and health check APIs.
+Developed the audio preprocessing pipeline:
+Audio loading
+Audio validation
+Audio normalization
+Audio segmentation
+Implemented feature extraction using Librosa:
+MFCC
+Mel Spectrogram
+Log-Mel Spectrogram
+Chroma Features
+Spectral Features
+Room Impulse Response (RIR)
+Breathing Features
+Added backend utilities (logging, configuration, file handling, prediction framework).
 
-Implemented:
 
-- Log-Mel Spectrogram extraction module for Audio Spectrogram Transformer (AST).
-- AST configuration module for model parameters.
-- Updated preprocessing pipeline for future AST integration.
-
-These modules prepare the project for transformer-based audio classification.
-
+Week 2 – Completed Work
+Downloaded and organized the ASVspoof2019 LA dataset.
+Implemented dataset loader and label handling.
+Prepared the backend for Audio Spectrogram Transformer (AST) integration.
+Developed the React frontend:
+Audio upload page
+Waveform visualization
+Results dashboard
+Integrated frontend structure with the backend API.
+Planned the AST-based training and prediction pipeline for the next phase.
 ---
 
 ## 🔜 Upcoming Work
